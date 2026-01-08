@@ -71,7 +71,8 @@ func main() {
 
 ## Links
 
-- Website: [domainkits.com](https://domainkits.com), [ABTdomain.com](https://ABTdomain.com)
+- Website: [ABTdomain.com](https://ABTdomain.com)
+- Use Case: [domainkits.com](https://domainkits.com)
 - Python version: [github.com/ABTdomain/dksplit](https://github.com/ABTdomain/dksplit)
 - Documentation: [dksplit.readthedocs.io](https://dksplit.readthedocs.io)
 - PyPI: [pypi.org/project/dksplit](https://pypi.org/project/dksplit)
