@@ -77,7 +77,6 @@ Tested on [Majestic Million](https://majestic.com/reports/majestic-million) doma
 | affordablecollegesonline | affordable colleges online |
 | stephenwolfram | stephen wolfram |
 | ralphlauren | ralphlauren |
-| m12ivermectin | m12i vermectin |
 
 Run benchmark yourself:
 ```bash
