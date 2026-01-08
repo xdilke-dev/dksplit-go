@@ -64,6 +64,32 @@ func main() {
 | mercibeaucoup | merci beaucoup |
 | gutenmorgen | guten morgen |
 
+## Real World Benchmark
+Tested on Majestic Million domains:
+
+| Input | Output |
+|-------|--------|
+| amitriptylineinfo | amitriptyline info |
+| autoriteprotectiondonnees | autorite protection donnees |
+| mountaingoatsoftware | mountain goat software |
+| psychologytoday | psychology today |
+| affordablecollegesonline | affordable colleges online |
+| stephenwolfram | stephen wolfram |
+| ralphlauren | ralphlauren |
+| m12ivermectin | m12i vermectin |
+
+
+Download test data:
+```bash
+wget https://downloads.majestic.com/majestic_million.csv -O top-1m.csv
+go test -v -run TestRealWorldBenchmark
+```
+
+Results on Intel Core i9-9900K:
+- Dataset: 10,000 unique domains (length > 10, no hyphens)
+- QPS: 3,175/s
+
+
 ## Requirements
 
 - Go 1.21+
