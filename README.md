@@ -8,10 +8,10 @@ Built with BiLSTM-CRF model and ONNX Runtime.
 
 | CPU | Mode | QPS |
 |-----|------|-----|
-| Intel Core i9-14900K | Single | 1,995/s |
-| Intel Core i9-14900K | Batch | 8,101/s |
-| Intel Core i9-9900K | Single | 1,444/s |
-| Intel Core i9-9900K | Batch | 3,596/s |
+| Intel Core i9-14900K | Single | ~1,700/s |
+| Intel Core i9-14900K | Batch | ~7,000/s |
+| Intel Core i9-9900K | Single | ~1,000/s |
+| Intel Core i9-9900K | Batch | ~3,000/s |
 
 Batch mode is **4.6x** faster than single mode.
 
@@ -65,7 +65,8 @@ func main() {
 | gutenmorgen | guten morgen |
 
 ## Real World Benchmark
-Tested on Majestic Million domains:
+
+Tested on [Majestic Million](https://majestic.com/reports/majestic-million) domains:
 
 | Input | Output |
 |-------|--------|
@@ -78,8 +79,7 @@ Tested on Majestic Million domains:
 | ralphlauren | ralphlauren |
 | m12ivermectin | m12i vermectin |
 
-
-Download test data:
+Run benchmark yourself:
 ```bash
 wget https://downloads.majestic.com/majestic_million.csv -O top-1m.csv
 go test -v -run TestRealWorldBenchmark
@@ -88,7 +88,6 @@ go test -v -run TestRealWorldBenchmark
 Results on Intel Core i9-9900K:
 - Dataset: 10,000 unique domains (length > 10, no hyphens)
 - QPS: 3,175/s
-
 
 ## Requirements
 
