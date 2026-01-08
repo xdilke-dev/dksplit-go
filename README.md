@@ -6,10 +6,12 @@ Built with BiLSTM-CRF model and ONNX Runtime.
 
 ## Performance
 
-| CPU | Mode | QPS | Latency |
-|-----|------|-----|---------|
-| Intel Core i9-14900K | Single | 2,128/s | 469μs |
-| Intel Core i9-14900K | Batch | 9,565/s | - |
+| CPU | Mode | QPS |
+|-----|------|-----|
+| Intel Core i9-14900K | Single | 1,995/s |
+| Intel Core i9-14900K | Batch | 8,101/s |
+| Intel Core i9-9900K | Single | 1,444/s |
+| Intel Core i9-9900K | Batch | 3,596/s |
 
 Batch mode is **4.6x** faster than single mode.
 
