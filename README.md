@@ -4,12 +4,12 @@ Go implementation of [DKSplit](https://github.com/ABTdomain/dksplit) - fast word
 
 Built with BiLSTM-CRF model and ONNX Runtime.
 
-## Performance: Intel(R) Core(TM) i9-14900K
+## Performance
 
-| Mode | QPS | Latency |
-|------|-----|---------|
-| Single | 2,128/s | 469μs |
-| Batch | 9,565/s | - |
+| CPU | Mode | QPS | Latency |
+|-----|------|-----|---------|
+| Intel Core i9-14900K | Single | 2,128/s | 469μs |
+| Intel Core i9-14900K | Batch | 9,565/s | - |
 
 Batch mode is **4.6x** faster than single mode.
 
@@ -20,15 +20,6 @@ Compared to Python version:
 ## Install
 ```bash
 go get github.com/ABTdomain/dksplit-go
-```
-
-### ONNX Runtime Dependency
-
-Download and set up ONNX Runtime 1.20.0:
-```bash
-wget https://github.com/microsoft/onnxruntime/releases/download/v1.20.0/onnxruntime-linux-x64-1.20.0.tgz
-tar -xzf onnxruntime-linux-x64-1.20.0.tgz
-export LD_LIBRARY_PATH=$PWD/onnxruntime-linux-x64-1.20.0/lib:$LD_LIBRARY_PATH
 ```
 
 ## Usage
@@ -74,7 +65,7 @@ func main() {
 ## Requirements
 
 - Go 1.21+
-- ONNX Runtime 1.20.0
+- Linux x64
 
 ## Links
 
